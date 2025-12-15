@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "dima_mod:block/auto_tree_planter_block"
+    "all": "dima_mod:block/dima_block"
   }
 }

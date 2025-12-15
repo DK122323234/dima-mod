@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "dima_mod:block/dima_block" }
+    "": { "model": "dima_mod:block/auto_tree_planter_block" }
   }
 }

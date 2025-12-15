@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "dima_mod:block/auto_tree_planter_block"
+    "layer0": "dima_mod:block/dima_block"
   }
 }

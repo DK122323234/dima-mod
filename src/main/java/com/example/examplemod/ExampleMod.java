@@ -1,5 +1,8 @@
 package com.example.examplemod;
 
+import com.example.examplemod.Item.DimaBlockItem;
+import com.example.examplemod.Item.DimaItem;
+import com.example.examplemod.blocks.AutoTreePlanterBlockRegister;
 import com.example.examplemod.blocks.DimaBlock;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -70,10 +73,14 @@ public class ExampleMod
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
-        DimaBlock.BLOCKS.register(modEventBus);       // Register the Deferred Register to the mod event bus so items get registered
+        DimaBlock.BLOCKS.register(modEventBus);// Register the Deferred Register to the mod event bus so items get registered
+        AutoTreePlanterBlockRegister.BLOCKS.register(modEventBus);
+        DimaBlockItem.ITEMS.register(modEventBus);
         ITEMS.register(modEventBus);
+        DimaItem.ITEM.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
