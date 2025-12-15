@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.Item.AutoTreePlanterBlockItem;
 import com.example.examplemod.Item.DimaBlockItem;
 import com.example.examplemod.Item.DimaItem;
 import com.example.examplemod.blocks.AutoTreePlanterBlockRegister;
@@ -78,6 +79,7 @@ public class ExampleMod
         DimaBlockItem.ITEMS.register(modEventBus);
         ITEMS.register(modEventBus);
         DimaItem.ITEM.register(modEventBus);
+        AutoTreePlanterBlockItem.ITEM.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 
