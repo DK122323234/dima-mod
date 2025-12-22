@@ -3,8 +3,11 @@ package com.example.examplemod;
 import com.example.examplemod.Item.AutoTreePlanterBlockItem;
 import com.example.examplemod.Item.DimaBlockItem;
 import com.example.examplemod.Item.DimaItem;
+import com.example.examplemod.Item.TestBlockItem;
+import com.example.examplemod.blocks.AutoTreePlanterBlockEntityRegister;
 import com.example.examplemod.blocks.AutoTreePlanterBlockRegister;
 import com.example.examplemod.blocks.DimaBlock;
+import com.example.examplemod.blocks.TestBlock;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -79,7 +82,11 @@ public class ExampleMod
         DimaBlockItem.ITEMS.register(modEventBus);
         ITEMS.register(modEventBus);
         DimaItem.ITEM.register(modEventBus);
+        TestBlock.TEST_BLOCK.register(modEventBus);
+        TestBlockItem.TEST_BLOCK_ITEM.register(modEventBus);
         AutoTreePlanterBlockItem.ITEM.register(modEventBus);
+        AutoTreePlanterBlockEntityRegister.BLOCK_ENTITY.register(modEventBus);
+
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 
